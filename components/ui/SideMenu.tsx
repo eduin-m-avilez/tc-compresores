@@ -1,6 +1,7 @@
 import { Box, Divider, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader } from "@mui/material"
-import { AccountCircleOutlined, AdminPanelSettings, CategoryOutlined, ConfirmationNumberOutlined, EscalatorWarningOutlined, FemaleOutlined, LoginOutlined, MaleOutlined, SearchOutlined, VpnKeyOutlined } from "@mui/icons-material"
+import {  AdminPanelSettings, CategoryOutlined, ConfirmationNumberOutlined, EscalatorWarningOutlined, FemaleOutlined, LoginOutlined, MaleOutlined, SearchOutlined, VpnKeyOutlined, Home } from "@mui/icons-material"
 
+import HomeIcon from '@mui/icons-material/Home';
 
 export const SideMenu = () => {
   return (
@@ -13,27 +14,11 @@ export const SideMenu = () => {
             
             <List>
 
-                <ListItem>
-                    <Input
-                        type='text'
-                        placeholder="Buscar..."
-                        endAdornment={
-                            <InputAdornment position="end">
-                                <IconButton
-                                aria-label="toggle password visibility"
-                                >
-                                 <SearchOutlined />
-                                </IconButton>
-                            </InputAdornment>
-                        }
-                    />
-                </ListItem>
-
                 <ListItem button>
                     <ListItemIcon>
-                        <AccountCircleOutlined/>
+                        <HomeIcon/>
                     </ListItemIcon>
-                    <ListItemText primary={'Perfil'} />
+                    <ListItemText primary={'Inicio'} />
                 </ListItem>
 
                 <ListItem button>

@@ -1,0 +1,14 @@
+.imageAnimation{
+    animation: move 5s ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(-5px) ;
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}

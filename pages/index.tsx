@@ -5,16 +5,21 @@ import { Typography, Grid, Card, CardActionArea, CardMedia } from '@mui/material
 import { ShopLayout } from '../components/layouts'
 
 import { initialData } from '../database/products'
-import { ProductList } from '../components/products'
+import { HomeCardList, ProductList } from '../components/products'
+import { initialCard } from '../database/cardHome'
+
+import { Header } from '../components/ui'
+
 
 
 const Home: NextPage = () => {
   return (
-    <ShopLayout title={'Yafe-Shop'} pageDescription={'Encuentra las mejores zapatillas aqui, todo para tu comodidad'}>
-        <Typography variant='h1' component='h1'>Tienda Yafe-Shop</Typography>
-        <Typography variant='h2' sx={{ marginBotton: 1 }}>Todos los Productos</Typography>
+    <ShopLayout title={'TC-Compresores | Home'} pageDescription={'Compresores de tornillo, compresores de piston redes neumaticas'}>
+      
+        <Header/>
 
-        <ProductList products={ initialData.products as any } />
+        {/* <ProductList products={ initialData.products as any } /> */}
+        <HomeCardList cards={ initialCard.carts as any }/>
 
     </ShopLayout>
   )
